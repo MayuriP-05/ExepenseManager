@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4f92722c24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashStyle.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header >
+        <nav class="navbar">
+            <div class="menu-btn" >
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <h1><span class="financly">F</span>inancly</h1>
+            </div>
+            <button class="login" onclick="logOut()">
+               Logout
+            </button>
+        </nav>
+    </header>
+    <hr class="hr-shadow">
+    <div class="container">
+      
+            <div class="sidebar" class="hidden">
+            <div class="profile">
+                <div class="profile-logo">
+                    <img src="profile.png" alt="">
+                </div>
+                    <div class="info">
+                        <div class="name-cus" >
+                            <h2 class="user-name">
+                                
+                              
+                            </h2>
+                        </div>
+                        <p>Your Money</p>
+                    </div>
+             
+            </div>
+           
+                <ul class="menu-items">
+                    <li class="dash-board side-by">
+                    <a href="dashboard.html">
+                        <span><i class="fa-solid fa-chart-line"></i></span>
+                        <p>Dashboard</p>
+                    </a>
+                    </li>
+                   
+                    <li class="income-side side-by" >
+                        <a href="income.html"> <span><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                            <p>Income</p></a>
+                       
+                    </li>
+                    <li class="expense-side side-by">
+                        <a href="expense.html">
+                        <span><i class="fa-solid fa-money-bill-transfer"></i></span>
+                    <p >Expenses</p>
+                </a>
+                    </li>
+                    <li class="transaction-side side-by">
+                        <a href="tax-calculator.html">
+                        <span><i class="fa-solid fa-credit-card"></i></span>
+                   <p>Tax-calculator</p>
+                </a>
+                    </li>
+                    <li class="ai-support-side side-by">
+                        <a href="genimi.html">
+                            <span class="material-symbols-outlined">
+                                diversity_2
+                                </span>
+                   <p>AI Support</p>
+                </a>
+                    </li>
+                </ul>
+            
+         </div>
+      
+        <div class="side-container">
+            <h1>All Transactions</h1>
+            
+                <div class="chart-container">
+                    <div class="chart-con">
+                        <canvas id="dailyIncomeChart"></canvas>
+                    </div>
+                  <div class="chart-con">
+                    <!-- <canvas id="compareChart"></canvas> -->
+                    <canvas id="dailyExpenseChart"></canvas>
+                    </div>
+                    
+                </div>
+                <div class="states-with-ai">
+                 <div class="states-con">
+                    <div class="chart-con2">
+                        <canvas id="totalExpenseIncomeChart"></canvas>
+                    </div>
+                    <div class="amount-con">
+               
+                        <div class="income">
+                            <h2 class="t-income"></h2>
+                           
+                        </div>
+                        <div class="expense">
+                            <h2 class="t-expense"></h2>
+                            
+                        </div>
+                        <div class="balance" style="display: flex;">
+                      <h2>  Total Balance: </h2>
+                      <h2 class="t-balance"></h2>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-cont">
+                 <h2 class="finance">AI Financial Advisor:</h2>
+                 <p class="ai-advice"></p>
+                </div>
+            </div>
+            </div>
+              </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="expense.js"></script>
+    <script src="incomejs.js"></script>
+<script src="dashScript.js"></script>
+</body>
+</html>

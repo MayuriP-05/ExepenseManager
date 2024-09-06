@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container{
+    /* margin: 30px 30px 0 30px; */
+    padding:  30px 20px 25px 30px;
+    display: flex;
+ background: linear-gradient(to right, rgba(215, 197, 212, 0.78), rgba(204, 181, 191, 0.78));
+    gap: 30px;
+    min-height: 89vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+}
+.sidebar{
+    background: rgba(238, 231, 234, 0.78);
+    border: 10px solid #FFFFFF;
+    border-radius: 15px;
+    color: rgb(22, 22, 71);
+    /* border: 2px solid black; */
+    padding: 40px 20px;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.profile{
+    display: flex;
+    gap: 10px;
+}
+.info{
+    padding-top: 7px;
+}
+.profile-logo img{
+ width: 55px;
+ height: 55px;
+ background-color: rgb(146, 146, 172);
+ padding: 2px;
+ border-radius: 50%;
+ border: 2px solid white;
+ box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+}
+.menu-items{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.menu-items li{
+    color: rgba(84, 84, 157, 0.6);
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    font-size: 1.4rem;
+    transition: all .4s ease-in-out;
+   
+}
+.menu-items li{
+    /* color: rgba(25, 25, 72, 0.6); */
+    /* font-size: 1.4rem;
+    transition: all .4s ease-in-out; */
+}
+.side-by a{
+    /* color:  rgba(23, 23, 75, 0.6); */
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+   color:  rgba(45, 45, 114, 0.6);
+}
+.menu-items li a:hover{
+    color: rgb(28, 28, 104) 
+   
+}
+
+.side-container{
+    padding:10px;
+    background: rgba(238, 231, 234, 0.78);
+    border-radius: 15px;
+    border: 10px solid #FFFFFF;
+    width: 80%;
+    /* border: 2px solid black; */
+}
+.side-container>h1{
+
+}
+/* .chart-con{
+    width: 500px;
+    height: 500px;
+} */
+/* #dailyExpenseChart , #dailyIncomeChart{
+    height: 300px;
+    width: 300px;
+} */
+.chart-container{
+    display: flex;
+
+}
+.chart-con {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust based on your design */
+    margin: 0 auto;   /* Center the chart container */
+    padding: 20px;    /* Optional padding around the chart */
+}
+.states-with-ai{
+ 
+    display: flex;
+    width: 1200px;
+    gap: 20px;
+}
+.states-con{
+    height: 400px;
+    width:56%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.amount-con{
+
+}
+.chart-con2{
+    
+}
+.amount-con h2{
+    padding-bottom: 9px;
+}
+.ai-cont{
+    /* align-self: center;
+    justify-self: center; */
+    margin-top:50px;
+    /* border: 2px solid black; */
+    width: 44%;
+    max-height: 250px;
+}
+.finance{
+    background: linear-gradient(to right,red,blue);
+color: transparent;
+-webkit-background-clip: text;
+}
+.ai-advice{
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 12px;
+ border: 3px solid rgb(11, 16, 101);
+ box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+}
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width:1024px){
+    .container{
+            /* margin: 30px 30px 0 30px; */
+    padding:  15px 8px 25px 8px; 
+    gap: 5px;
+    min-height: 100vh;
+}
+    
+.sidebar{
+    background: rgba(238, 231, 234, 0.78);
+    border: 10px solid #FFFFFF;
+    border-radius: 15px;
+    color: rgb(22, 22, 71);
+    /* border: 2px solid black; */
+    padding: 40px 20px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.side-container{
+    padding:10px;
+    background: rgba(238, 231, 234, 0.78);
+    border-radius: 15px;
+    border: 10px solid #FFFFFF;
+    width: 72%;
+    /* border: 2px solid black; */
+}
+.side-container>h1{
+font-size:22px;
+}
+    .states-with-ai{
+ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:96%;
+        gap: 20px;
+    }
+    .chart-container{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    }
+    .chart-con {
+        position: relative;
+        width: 100%;
+        max-width: 600px; /* Adjust based on your design */
+        margin: 0 auto;   /* Center the chart container */
+        padding: 20px;    /* Optional padding around the chart */
+    }
+    
+
+.states-con{
+    height: 400px;
+    width:100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.amount-con h2{
+    padding-bottom: 9px;
+}
+.ai-cont{
+    margin-top:10px;
+    width: 100%;
+    min-height: 400px;
+}
+}
+.menu-btn{
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+    .login{
+        /* display: none; */
+    }
+    .menu-btn{
+        display: block;
+        border: 2px solid black;
+        padding: 4px 8px;
+        font-size: 18px;
+        color: black;
+    }
+
+    .sidebar{
+        display: none;
+        background: rgba(238, 231, 234, 0.78);
+        border: 10px solid #FFFFFF;
+        border-radius: 15px;
+        color: rgb(22, 22, 71);
+        /* border: 2px solid black; */
+        padding: 20px 20px;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+
+    .container{
+        /* margin: 30px 30px 0 30px; */
+padding:  15px 12px 25px 12px; 
+gap: 5px;
+min-height: 100vh;
+flex-direction: column;
+}
+
+.side-container{
+    margin-top: 25px;
+    padding:10px;
+    background: rgba(238, 231, 234, 0.78);
+    border-radius: 15px;
+    border: 10px solid #FFFFFF;
+    width: 99%;
+    /* border: 2px solid black; */
+}
+.states-con{
+    height: 300px;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.states-with-ai{
+    width:96%;
+    gap: 50px;
+}
+.amount-con {
+font-size: 12px;
+padding-bottom: 2px;
+}
+.ai-cont{
+    min-height: 450px;
+}
+
+}
+
+
+

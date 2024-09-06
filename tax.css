@@ -1,0 +1,116 @@
+.tax-des{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right,red,blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+    font-size: 25px;
+}
+.tax-des2{
+    margin-right: 200px;
+    font-size: 18px;
+}
+.tax-container{
+    margin-top: 30px;
+    display: flex;
+    gap: 70px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+/* .tax-info table{
+    border: 2px solid black;
+    padding: 5px;
+} */
+ 
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+th {
+    background-color: #448573;
+}
+#tax-calculator{
+    border-radius: 5px;
+padding:30px 40px;
+    background-color: #40477a;;
+    width: 580px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#tax-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#tax-form input{
+    /* background-color: rgb(175, 187, 206); */
+    border-radius: 5px;
+  /* width: 350px; */
+  /* align-self: flex-end; */
+  padding: 9px 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+#tax-form button{
+    border-radius: 3px;
+    /* margin-left: 300px; */
+    /* align-self: flex-end; */
+    width: 120px;
+    padding: 8px 3px;
+    font-size: 15px;
+    font-weight: 500;
+}
+#tax-calculator p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.para-tax{
+    color: white;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 10px; */
+}
+
+@media screen and (max-width:1024px) {
+    .tax-container{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin:20px;
+    } 
+    .tax-des2{
+        margin-right: 50px;
+        font-size: 18px;
+    }
+    #tax-calculator{
+       
+    padding:30px 40px;
+        background-color: #40477a;;
+        width: 480px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+}
+@media screen and (max-width:480px){
+    th, td {
+        padding: 5px;
+        border: 1px solid #dddddd;
+        text-align: center;
+    }
+    #tax-calculator{
+       
+        padding:30px 20px;
+            background-color: #40477a;;
+            width: 350px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+}

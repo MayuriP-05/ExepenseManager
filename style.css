@@ -1,0 +1,325 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+ 
+}
+body{
+    /* background-color: rgb(182, 176, 176); */
+    /* background-color: #f5eded; */
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    /* background-color: rgb(49, 97, 53); */
+    background-color:  rgb(114, 146, 195);
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.navbar{
+
+    width: 80vw;
+    margin-inline: auto;
+    background-color:rgb(114, 146, 195);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.logo i{
+    display: none;
+}
+.logo h1{
+    font-size: 36px;
+    font-family: "Playwrite CU", cursive;
+  font-optical-sizing:none;
+  font-weight: 600;
+  font-style: normal;
+  /* color: whitesmoke; */
+  text-shadow: 1px 1px 1px black;
+}
+
+.login{
+    cursor: pointer;
+  /* width: ; */
+    padding: 8px 20px;
+    font-size: 22px;
+    border-radius: 15px;
+    background-color:rgb(149, 120, 149);
+    border: 3px solid rgb(160, 220, 146);
+    /* border-top: 5px solid red;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid #18e409;
+    border-right: 2px solid rgb(243, 243, 158); */
+    box-shadow:rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+   
+}
+
+.login a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+.login:hover{
+    background-color:rgb(136, 106, 136);
+ transform: scale(1.08);
+}
+.hr-shadow{
+    box-shadow:rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.home-container{
+    width: 100vw;
+    padding: 120px 250px 0 250px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.home-container-content{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items:center;
+    justify-content: center;
+   
+}
+
+.home-con1{
+    font-family: "Caveat", cursive;
+    font-size: 39px;
+  /* font-optical-sizing: auto; */
+  font-weight: 300;
+  font-style: normal;
+  /* transform: translateY(10px); */
+  position: relative;
+}
+
+.red-line{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100px;
+    transform: translate(0,-50%);
+}
+.blue-dot{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 120px;
+    /* transform: translate(0,-50%); */
+}
+
+.home-con2{
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.home-con2 .effect{
+    font-size: 30px;
+    padding-bottom: 10px;
+    background: linear-gradient(to right,red,blue);
+color: transparent;
+-webkit-background-clip: text;
+
+}
+.home-con2 span{
+   font-weight: 500;
+   font-size: 32px;
+}
+ .started{
+    /* margin-left: 250px; */
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color:rgb(149, 120, 149);
+    border: 4px solid rgb(87, 121, 75);
+    font-size: 21px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+/* .started:hover{
+    transform: scale(1.1);
+} */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.container-fluid{
+  /* height: 90vh; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #FFF;
+}
+/* ============= Animation background ========= */
+.background {
+  background: linear-gradient(132deg, #c2848c, #7b62a4, #3b3f5c);
+  background-size: 400% 400%;
+  animation: Gradient 5s ease infinite;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  /* overflow: hidden; */
+  padding:0;
+  margin:0px;
+}
+/* ================= Header ============ */
+.header-content{
+  position: absolute;
+  top:10%;
+  left: 0%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header-content{
+  /* margin-top:20px; */
+  /* text-align: center; */
+  /* color:  #EFEEF5; */
+}
+/* Animate Background */
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+
+@media screen and (max-width:1024px){
+  
+    .home-container{
+        width: 100vw;
+        padding: 120px 60px 0 60px;
+        /* margin-inline: auto; */
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .home-con2{
+        font-size: 29px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    header{
+        height: 7vh;
+    }
+    .navbar{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .logo h1{
+        font-size: 30px;
+      font-weight: 500;
+    }
+    
+    .login{
+        cursor: pointer;
+      /* width: ; */
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+    
+    .login a{
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+    }
+    .login:hover{
+        background-color:rgb(136, 106, 136);
+     transform: scale(1.08);
+    }
+    .home-container-content{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items:center;
+        justify-content: center;
+       
+    }
+    .home-container {
+
+        width: 100vw;
+        padding: 0px 30px 20px 30px;
+        /* margin-inline: auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-con2 {
+        font-size: 18px;
+    }
+    .home-con2 .effect{
+        font-size: 20px;
+        padding-bottom: 10px;
+        background: linear-gradient(to right,red,blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+    }
+    .home-con1{
+        font-family: "Caveat", cursive;
+        font-size: 23px;
+      /* font-optical-sizing: auto; */
+      font-weight: 300;
+      font-style: normal;
+      /* transform: translateY(10px); */
+      position: relative;
+    }
+    
+    .red-line{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 60px;
+       
+    }
+    .blue-dot{
+        position: absolute;
+        top: 30%;
+        right: 0;
+        width: 80px;
+   
+    }
+    .container-fluid{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background: #FFF;
+       
+      }
+    
+}

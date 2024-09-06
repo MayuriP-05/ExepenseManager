@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4f92722c24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashStyle.css">
+    <link rel="stylesheet" href="income.css">
+    <title>Income-page</title>
+</head>
+<body>
+    <header >
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <h1><span class="financly">F</span>inancly</h1>
+            </div>
+            <button class="login" onclick="logOut()">
+               Logout
+            </button>
+        </nav>
+    </header>
+    <hr class="hr-shadow">
+     <div class="container">
+      
+            <div class="sidebar">
+            <div class="profile">
+                <div class="profile-logo">
+                    <img src="profile.png" alt="">
+                </div>
+                    <div class="info">
+                        <div class="name-cus">
+                            <h2 class="user-name"></h2>
+                        </div>
+                        <p>Your Money</p>
+                    </div>
+             
+            </div>
+           
+            <ul class="menu-items">
+                <li class="dash-board side-by">
+                <a href="dashboard.html">
+                    <span><i class="fa-solid fa-chart-line"></i></span>
+                    <p>Dashboard</p>
+                </a>
+                </li>
+               
+                <li class="income-side side-by" >
+                    <a href="income.html"> <span><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                        <p>Income</p></a>
+                   
+                </li>
+                <li class="expense-side side-by">
+                    <a href="expense.html">
+                    <span><i class="fa-solid fa-money-bill-transfer"></i></span>
+                <p >Expenses</p>
+            </a>
+                </li>
+                <li class="transaction-side side-by">
+                    <a href="tax-calculator.html">
+                    <span><i class="fa-solid fa-credit-card"></i></span>
+               <p>Tax-calculator</p>
+            </a>
+                </li>
+                <li class="ai-support-side side-by">
+                    <a href="genimi.html">
+                        <span class="material-symbols-outlined">
+                            diversity_2
+                            </span>
+               <p>AI Support</p>
+            </a>
+                </li>
+            </ul>
+            
+         </div>
+      
+         <div class="side-container">
+            <h1>Income</h1>
+           <div class="total-income">
+            <h1 id="total-incomee">Total Income : <span>₹</span></h1>
+           </div>
+           <div class="income-display">
+            <form class="form-container">
+                <div class="form-detail"><input type="text"  name="title" id="salary-title" placeholder="Salary Title">
+                </div>
+                <div class="form-detail"><input type="number"  name="title" id="salary-amount" placeholder="Salary Amount" required>
+                </div>
+                <div class="form-detail"><input type="datetime-local" name="date" id="salary-date" placeholder="Enter a date" required>
+                </div>
+                <div class="selects input-control" id="salary-category">
+                    <select required value="category" name="category" id="category" >
+                        <option value=""  disabled >Select Option</option>
+                        <option value="salary">Salary</option>
+                        <option value="freelancing">Freelancing</option>
+                        <option value="investments">Investiments</option>
+                        <option value="stocks">Stocks</option>
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="bank">Bank Transfer</option>  
+                        <option value="youtube">Youtube</option>  
+                        <option value="other">Other</option>  
+                    </select>
+                </div>
+                <div class="input-control">
+                    <textarea name="description" id="description" placeholder="Add description" cols="35" rows="6"></textarea>
+                </div>
+                <button class="add-button">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>Add Income</p>
+                </button>
+            </form>
+            <div class="income-info">
+          <ul class="income-info-cards" id="income-list">
+            <!-- <li class="income-card">
+                <div class="income-logo">
+                    <i class="fa-brands fa-bitcoin"></i>
+                </div>
+                <div class="income-info">
+                    <div class="income-source">
+            <p>Bitcoin</p>
+                    </div>
+                    <div class="income-detail">
+              <p>$2500</p>
+              <p>date</p>
+              <p>description</p>
+                    </div>
+                </div>
+                <div class="income-bin">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </li> -->
+         </ul>
+         <div class="chart-container">
+            <canvas id="incomeChart"></canvas>
+        </div>
+          </div>
+            </div>
+           </div>
+             
+        
+        
+        
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+<script src="incomejs.js"></script>
+</body>
+</html>
