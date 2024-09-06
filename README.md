@@ -46,6 +46,7 @@ AI Support(24*7) for better finance management.
 
 ## Screenshots
 
+(https://github.com/MayuriP-05/ExepenseManager/blob/main/screenshots/Screenshot%202024-09-06%20193523.png)
 
 ## Roadmap
  Add user login and profile tracking for expense control.
