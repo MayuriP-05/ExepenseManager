@@ -25,7 +25,7 @@ The Expense Tracker is a web application designed to help users manage their per
 1. Clone the repository:
 
    ```bash
-   git clone 
+   git clone https://github.com/MayuriP-05/ExepenseManager/tree/main
 
 
 ## Usage
