@@ -59,4 +59,4 @@ Feel free to fork the project, make your changes, and create a pull request. All
 ### Contact
 - Mayuri Patil
 - Email: mayurisp2052@gmail.com
-- Project Link: 
+- Project Link: https://mayurip-05.github.io/ExepenseManager/
